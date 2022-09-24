@@ -529,6 +529,12 @@ h3 {
 .logo-header span {
   color: #2196f3;
 }
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 500ms ease, visibility 500ms ease;
+}
 .backdrop {
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -536,7 +542,7 @@ h3 {
   height: 100%;
   left: 0px;
   top: 0px;
-  transition: opacity 250ms ease, visibility 550ms ease;
+  transition: opacity 500ms ease, visibility 500ms ease;
 }
 .modal {
   display: flex;
@@ -572,9 +578,4 @@ h3 {
 .modal-button:hover,
 .modal-button:focus {
   cursor: pointer;
-}
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
 }
